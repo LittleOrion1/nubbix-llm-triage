@@ -1,0 +1,22 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Caché y pruebas
+.pytest_cache/
+.mypy_cache/
+
+# Sistema operativo y editores
+.DS_Store
+.vscode/
+.idea/

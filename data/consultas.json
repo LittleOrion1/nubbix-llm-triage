@@ -1,0 +1,502 @@
+[
+  {
+    "id": "OA-001",
+    "texto": "¿Cómo puedo cambiar la dirección de mi correo electrónico asociado a mi cuenta?",
+    "nota": "Consulta relacionada con credenciales de usuario"
+  },
+  {
+    "id": "OA-002",
+        "texto": "¿Dónde puedo encontrar la información de mi cuenta?",
+    "nota": "Consulta relacionada con información de usuario"
+  },
+  {
+    "id": "OA-003",
+    "texto": "¿Cómo puedo restablecer mi contraseña?",
+    "nota": "Consulta relacionada con credenciales de usuario   "
+  },
+  {
+    "id": "OA-004",
+    "texto": "❌Hace días que estoy intentando iniciar sesión y no puedo 😡",
+    "nota": "Consulta relacionada con problemas técnicos"
+  },
+  {
+    "id": "OA-005",
+    "texto": "¿Cómo puedo eliminar mi cuenta?",
+    "nota": "Consulta relacionada con información de usuario"
+  },
+  {
+    "id": "OA-006",
+    "texto": "No logro entrar a mi cuenta, ¿qué puedo hacer?",
+    "nota": "Consulta relacionada con problemas técnicos"
+  },
+  {
+    "id": "OA-007",
+    "texto": "Me cobraron de más en mi cuenta, ¿cómo puedo solicitar un reembolso?",
+    "nota": "Consulta relacionada con facturación"
+  },
+  {
+    "id": "OA-008",
+    "texto": "¿Cómo puedo cambiar mi método de pago?",
+    "nota": "Consulta relacionada con facturación"
+  },
+  {
+    "id": "OA-009",
+    "texto": "No recibí la factura correspondiente al mes de diciembre. Gracias.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-010",
+    "texto": "Hola, El importe de mi última factura es superior al que esperaba. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Discrepancia en el importe facturado."
+  },
+  {
+    "id": "OA-011",
+    "texto": "Por favor, No recibí la factura correspondiente al mes de julio. Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-012",
+    "texto": "Tengo una consulta: No recibí la factura correspondiente al mes de marzo. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-013",
+    "texto": "Me cobraron dos veces el mismo servicio y quiero reclamar.",
+    "nota": "Generada sintéticamente. Reclamo por cobro duplicado."
+  },
+  {
+    "id": "OA-014",
+    "texto": "Hola, El importe de mi última factura es superior al que esperaba. Necesito una solución.",
+    "nota": "Generada sintéticamente. Discrepancia en el importe facturado."
+  },
+  {
+    "id": "OA-015",
+    "texto": "Tengo una consulta: Me cobraron dos veces el mismo servicio y quiero reclamar. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Reclamo por cobro duplicado."
+  },
+  {
+    "id": "OA-016",
+    "texto": "Hola, Quiero consultar si se registró el pago que realicé el día 09/01/1984. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre registro de pago."
+  },
+  {
+    "id": "OA-017",
+    "texto": "¿Cómo puedo cambiar mi método de pago? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Cambio de método de pago."
+  },
+  {
+    "id": "OA-018",
+    "texto": "Buenas, Quiero consultar si se registró el pago que realicé el día 10/08/1996. Gracias.",
+    "nota": "Generada sintéticamente. Consulta sobre registro de pago."
+  },
+  {
+    "id": "OA-019",
+    "texto": "Hola, Quiero solicitar un reembolso por un importe que me cobraron incorrectamente. Gracias.",
+    "nota": "Generada sintéticamente. Solicitud de reembolso."
+  },
+  {
+    "id": "OA-020",
+    "texto": "No recibí la factura correspondiente al mes de abril. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-021",
+    "texto": "Buenas, No recibí la factura correspondiente al mes de junio. Gracias.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-022",
+    "texto": "¿Cómo puedo cambiar mi método de pago? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Cambio de método de pago."
+  },
+  {
+    "id": "OA-023",
+    "texto": "Necesito ayuda: No recibí la factura correspondiente al mes de marzo.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-024",
+    "texto": "Por favor, ¿Cómo puedo cambiar mi método de pago? Necesito una solución.",
+    "nota": "Generada sintéticamente. Cambio de método de pago."
+  },
+  {
+    "id": "OA-025",
+    "texto": "Tengo una consulta: Mi tarjeta fue rechazada al intentar realizar el pago. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Problema con un medio de pago."
+  },
+  {
+    "id": "OA-026",
+    "texto": "No recibí la factura correspondiente al mes de octubre. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-027",
+    "texto": "Necesito ayuda: No recibí la factura correspondiente al mes de junio. Gracias.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-028",
+    "texto": "Por favor, ¿Puedo eliminar mi tarjeta actual y registrar otra? Gracias.",
+    "nota": "Generada sintéticamente. Administración de medios de pago."
+  },
+  {
+    "id": "OA-029",
+    "texto": "Buenas, Quiero solicitar un reembolso por un importe que me cobraron incorrectamente. Gracias.",
+    "nota": "Generada sintéticamente. Solicitud de reembolso."
+  },
+  {
+    "id": "OA-030",
+    "texto": "Por favor, El importe de mi última factura es superior al que esperaba. Gracias.",
+    "nota": "Generada sintéticamente. Discrepancia en el importe facturado."
+  },
+  {
+    "id": "OA-031",
+    "texto": "Tengo una consulta: No recibí la factura correspondiente al mes de agosto. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-032",
+    "texto": "Hola, No puedo completar una operación porque aparece un mensaje de error. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Error al ejecutar una operación."
+  },
+  {
+    "id": "OA-033",
+    "texto": "Buenas, No puedo acceder a la plataforma desde mi computadora. Necesito una solución.",
+    "nota": "Generada sintéticamente. Problema técnico de acceso."
+  },
+  {
+    "id": "OA-034",
+    "texto": "Por favor, No puedo completar una operación porque aparece un mensaje de error. Gracias.",
+    "nota": "Generada sintéticamente. Error al ejecutar una operación."
+  },
+  {
+    "id": "OA-035",
+    "texto": "Hola, No puedo iniciar sesión aunque estoy ingresando correctamente mi contraseña.",
+    "nota": "Generada sintéticamente. Falla técnica de acceso."
+  },
+  {
+    "id": "OA-036",
+    "texto": "Necesito ayuda: La aplicación se cierra inesperadamente cuando intento utilizarla. Gracias.",
+    "nota": "Generada sintéticamente. Falla de la aplicación."
+  },
+  {
+    "id": "OA-037",
+    "texto": "Hola, La aplicación muestra un error cada vez que intento ingresar. Necesito una solución.",
+    "nota": "Generada sintéticamente. Error de funcionamiento."
+  },
+  {
+    "id": "OA-038",
+    "texto": "Hola, La aplicación se cierra inesperadamente cuando intento utilizarla. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Falla de la aplicación."
+  },
+  {
+    "id": "OA-039",
+    "texto": "Por favor, No puedo acceder a la plataforma desde mi computadora. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Problema técnico de acceso."
+  },
+  {
+    "id": "OA-040",
+    "texto": "Buenas, La página queda cargando y nunca termina de abrir. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Problema de carga de la plataforma."
+  },
+  {
+    "id": "OA-041",
+    "texto": "Por favor, No puedo completar una operación porque aparece un mensaje de error. Necesito una solución.",
+    "nota": "Generada sintéticamente. Error al ejecutar una operación."
+  },
+  {
+    "id": "OA-042",
+    "texto": "Por favor, Desde ayer la plataforma funciona muy lentamente. Necesito una solución.",
+    "nota": "Generada sintéticamente. Problema de rendimiento."
+  },
+  {
+    "id": "OA-043",
+    "texto": "Tengo una consulta: No puedo acceder a la plataforma desde mi computadora. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Problema técnico de acceso."
+  },
+  {
+    "id": "OA-044",
+    "texto": "Hola, La aplicación se cierra inesperadamente cuando intento utilizarla. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Falla de la aplicación."
+  },
+  {
+    "id": "OA-045",
+    "texto": "Me aparece el código de error 503 cuando intento ingresar.",
+    "nota": "Generada sintéticamente. Error técnico de acceso."
+  },
+  {
+    "id": "OA-046",
+    "texto": "Hola, La aplicación muestra un error cada vez que intento ingresar. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Error de funcionamiento."
+  },
+  {
+    "id": "OA-047",
+    "texto": "Tengo una consulta: No puedo acceder a la plataforma desde mi computadora.",
+    "nota": "Generada sintéticamente. Problema técnico de acceso."
+  },
+  {
+    "id": "OA-048",
+    "texto": "Necesito ayuda: No puedo acceder a la plataforma desde mi computadora. Necesito una solución.",
+    "nota": "Generada sintéticamente. Problema técnico de acceso."
+  },
+  {
+    "id": "OA-049",
+    "texto": "Tengo una consulta: Me aparece el código de error 503 cuando intento ingresar. Gracias.",
+    "nota": "Generada sintéticamente. Error técnico de acceso."
+  },
+  {
+    "id": "OA-050",
+    "texto": "Por favor, No puedo iniciar sesión aunque estoy ingresando correctamente mi contraseña.",
+    "nota": "Generada sintéticamente. Falla técnica de acceso."
+  },
+  {
+    "id": "OA-051",
+    "texto": "Por favor, Desde ayer la plataforma funciona muy lentamente. Gracias.",
+    "nota": "Generada sintéticamente. Problema de rendimiento."
+  },
+  {
+    "id": "OA-052",
+    "texto": "Buenas, La aplicación muestra un error cada vez que intento ingresar. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Error de funcionamiento."
+  },
+  {
+    "id": "OA-053",
+    "texto": "Necesito ayuda: La página queda cargando y nunca termina de abrir.",
+    "nota": "Generada sintéticamente. Problema de carga de la plataforma."
+  },
+  {
+    "id": "OA-054",
+    "texto": "Tengo una consulta: Desde ayer la plataforma funciona muy lentamente. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Problema de rendimiento."
+  },
+  {
+    "id": "OA-055",
+    "texto": "Por favor, Olvidé mi contraseña y necesito restablecerla. Gracias.",
+    "nota": "Generada sintéticamente. Recuperación de credenciales."
+  },
+  {
+    "id": "OA-056",
+    "texto": "Hola, Necesito actualizar mi nombre de Dr(a). Lucía Perez en el perfil. Gracias.",
+    "nota": "Generada sintéticamente. Actualización de perfil."
+  },
+  {
+    "id": "OA-057",
+    "texto": "Tengo una consulta: ¿Cómo puedo consultar los datos personales registrados en mi cuenta? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta de datos personales."
+  },
+  {
+    "id": "OA-058",
+    "texto": "Tengo una consulta: Quiero cambiar mi correo electrónico actual por mendezbautista-benjamin@example.com. Gracias.",
+    "nota": "Generada sintéticamente. Modificación de correo electrónico."
+  },
+  {
+    "id": "OA-059",
+    "texto": "¿Cómo puedo cambiar mi contraseña actual?",
+    "nota": "Generada sintéticamente. Modificación de contraseña."
+  },
+  {
+    "id": "OA-060",
+    "texto": "Buenas, ¿Dónde puedo modificar la información de mi perfil? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Administración del perfil."
+  },
+  {
+    "id": "OA-061",
+    "texto": "Hola, Quiero cambiar mi correo electrónico actual por isabellaalvarez@example.com. Necesito una solución.",
+    "nota": "Generada sintéticamente. Modificación de correo electrónico."
+  },
+  {
+    "id": "OA-062",
+    "texto": "Olvidé mi contraseña y necesito restablecerla. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Recuperación de credenciales."
+  },
+  {
+    "id": "OA-063",
+    "texto": "Tengo una consulta: Olvidé mi contraseña y necesito restablecerla. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Recuperación de credenciales."
+  },
+  {
+    "id": "OA-064",
+    "texto": "Por favor, ¿Cómo puedo consultar los datos personales registrados en mi cuenta? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta de datos personales."
+  },
+  {
+    "id": "OA-065",
+    "texto": "Buenas, ¿Cómo puedo consultar los datos personales registrados en mi cuenta? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta de datos personales."
+  },
+  {
+    "id": "OA-066",
+    "texto": "Hola, Ya no tengo acceso al correo asociado a mi cuenta y necesito actualizarlo. Necesito una solución.",
+    "nota": "Generada sintéticamente. Actualización de credenciales."
+  },
+  {
+    "id": "OA-067",
+    "texto": "Por favor, Necesito actualizar mi nombre de Sr(a). Lautaro Flores en el perfil. Gracias.",
+    "nota": "Generada sintéticamente. Actualización de perfil."
+  },
+  {
+    "id": "OA-068",
+    "texto": "Por favor, Ya no tengo acceso al correo asociado a mi cuenta y necesito actualizarlo. Gracias.",
+    "nota": "Generada sintéticamente. Actualización de credenciales."
+  },
+  {
+    "id": "OA-069",
+    "texto": "Tengo una consulta: ¿Cómo puedo cambiar mi contraseña actual? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Modificación de contraseña."
+  },
+  {
+    "id": "OA-070",
+    "texto": "Hola, Olvidé mi contraseña y necesito restablecerla. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Recuperación de credenciales."
+  },
+  {
+    "id": "OA-071",
+    "texto": "Buenas, Olvidé mi contraseña y necesito restablecerla.",
+    "nota": "Generada sintéticamente. Recuperación de credenciales."
+  },
+  {
+    "id": "OA-072",
+    "texto": "Tengo una consulta: Necesito actualizar mi nombre de Mia Valentina Aguirre en el perfil. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Actualización de perfil."
+  },
+  {
+    "id": "OA-073",
+    "texto": "Quiero cambiar mi correo electrónico actual por lautaro74@example.com.",
+    "nota": "Generada sintéticamente. Modificación de correo electrónico."
+  },
+  {
+    "id": "OA-074",
+    "texto": "Necesito actualizar mi nombre de Josefina Maria Emilia Duarte en el perfil.",
+    "nota": "Generada sintéticamente. Actualización de perfil."
+  },
+  {
+    "id": "OA-075",
+    "texto": "¿Dónde puedo modificar la información de mi perfil? Necesito una solución.",
+    "nota": "Generada sintéticamente. Administración del perfil."
+  },
+  {
+    "id": "OA-076",
+    "texto": "Buenas, ¿Me pueden recomendar una película para esta noche? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-077",
+    "texto": "Tengo una consulta: ¿Me pueden recomendar una película para esta noche? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-078",
+    "texto": "Hola, ¿Me pueden ayudar con una cuestión que tengo pendiente? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sin intención definida."
+  },
+  {
+    "id": "OA-079",
+    "texto": "Hola, Quería preguntarles algo, pero no sé cómo explicarlo.",
+    "nota": "Generada sintéticamente. Consulta incompleta."
+  },
+  {
+    "id": "OA-080",
+    "texto": "Por favor, Necesito una recomendación de restaurantes en Posadas. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta fuera del dominio."
+  },
+  {
+    "id": "OA-081",
+    "texto": "Necesito ayuda: No sé qué hacer, necesito ayuda. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Mensaje ambiguo."
+  },
+  {
+    "id": "OA-082",
+    "texto": "Por favor, ¿Me pueden ayudar con una cuestión que tengo pendiente?",
+    "nota": "Generada sintéticamente. Consulta sin intención definida."
+  },
+  {
+    "id": "OA-083",
+    "texto": "Necesito una recomendación de restaurantes en La Rioja. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta fuera del dominio."
+  },
+  {
+    "id": "OA-084",
+    "texto": "No sé qué hacer, necesito ayuda. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Mensaje ambiguo."
+  },
+  {
+    "id": "OA-085",
+    "texto": "Hola, ¿Me pueden recomendar una película para esta noche? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-086",
+    "texto": "Buenas, ¿Quién ganó el último partido de fútbol? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre deportes."
+  },
+  {
+    "id": "OA-087",
+    "texto": "¿Me pueden recomendar una película para esta noche? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-088",
+    "texto": "Necesito una recomendación de restaurantes en Posadas. Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta fuera del dominio."
+  },
+  {
+    "id": "OA-089",
+    "texto": "¿Qué temperatura va a hacer mañana en Corrientes? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-090",
+    "texto": "Necesito ayuda: ¿Quién ganó el último partido de fútbol? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre deportes."
+  },
+  {
+    "id": "OA-091",
+    "texto": "Hola, ¿Qué temperatura va a hacer mañana en Corrientes? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-092",
+    "texto": "Necesito ayuda: ¿Qué temperatura va a hacer mañana en San Salvador de Jujuy? Gracias.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-093",
+    "texto": "Buenas, ¿Me pueden ayudar con una cuestión que tengo pendiente? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sin intención definida."
+  },
+  {
+    "id": "OA-094",
+    "texto": "Hola, ¿Me pueden ayudar con una cuestión que tengo pendiente? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta sin intención definida."
+  },
+  {
+    "id": "OA-095",
+    "texto": "Hola, Hola, tengo una consulta.",
+    "nota": "Generada sintéticamente. Consulta sin información suficiente."
+  },
+  {
+    "id": "OA-096",
+    "texto": "Por favor, ¿Qué temperatura va a hacer mañana en Salta? Gracias.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-097",
+    "texto": "¿Qué temperatura va a hacer mañana en Santiago del Estero? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-098",
+    "texto": "Tengo una consulta: ¿Me pueden ayudar con una cuestión que tengo pendiente? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta sin intención definida."
+  },
+  {
+    "id": "OA-099",
+    "texto": "¿Quién ganó el último partido de fútbol? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta sobre deportes."
+  },
+  {
+    "id": "OA-100",
+    "texto": "Hola, Necesito una recomendación de restaurantes en Chilecito.",
+    "nota": "Generada sintéticamente. Consulta fuera del dominio."
+  }
+]

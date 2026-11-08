@@ -1,0 +1,102 @@
+{
+  "OA-001": {
+    "categoria": "account",
+    "regla": null,
+    "justificacion": "El usuario solicita modificar el correo electrónico asociado a su cuenta."
+  },
+  "OA-016": {
+    "categoria": "billing",
+    "regla": "R02",
+    "justificacion": "El usuario consulta por el estado de un pago."
+  },
+  "OA-019": {
+    "categoria": "billing",
+    "regla": "R02",
+    "justificacion": "El usuario solicita la devolución de un cobro incorrecto."
+  },
+  "OA-023": {
+    "categoria": "billing",
+    "regla": "R02",
+    "justificacion": "El usuario consulta por una factura no recibida."
+  },
+  "OA-025": {
+    "categoria": "billing",
+    "regla": "R05",
+    "justificacion": "El usuario informa un inconveniente con el procesamiento del pago."
+  },
+  "OA-026": {
+    "categoria": "billing",
+    "regla": "R02",
+    "justificacion": "El usuario consulta por una factura no recibida."
+  },
+  "OA-032": {
+    "categoria": "technical",
+    "regla": "R03",
+    "justificacion": "El usuario informa una falla técnica durante el uso del sistema."
+  },
+  "OA-037": {
+    "categoria": "technical",
+    "regla": "R03",
+    "justificacion": "El usuario informa un error técnico de la aplicación."
+  },
+  "OA-041": {
+    "categoria": "technical",
+    "regla": "R03",
+    "justificacion": "El usuario informa una falla técnica durante el uso del sistema."
+  },
+  "OA-042": {
+    "categoria": "technical",
+    "regla": "R03",
+    "justificacion": "El usuario reporta lentitud en el funcionamiento del sistema."
+  },
+  "OA-054": {
+    "categoria": "technical",
+    "regla": "R03",
+    "justificacion": "El usuario reporta lentitud en el funcionamiento del sistema."
+  },
+  "OA-059": {
+    "categoria": "account",
+    "regla": "R01",
+    "justificacion": "El usuario solicita modificar sus credenciales."
+  },
+  "OA-061": {
+    "categoria": "account",
+    "regla": "R01",
+    "justificacion": "El usuario solicita modificar el correo asociado a su cuenta."
+  },
+  "OA-073": {
+    "categoria": "account",
+    "regla": "R01",
+    "justificacion": "El usuario solicita modificar el correo asociado a su cuenta."
+  },
+  "OA-074": {
+    "categoria": "account",
+    "regla": "R04",
+    "justificacion": "El usuario solicita modificar información personal de su cuenta."
+  },
+  "OA-085": {
+    "categoria": "other",
+    "regla": "R06",
+    "justificacion": "El usuario solicita una recomendación no relacionada con Nubbix."
+  },
+  "OA-087": {
+    "categoria": "other",
+    "regla": "R06",
+    "justificacion": "El usuario solicita una recomendación no relacionada con Nubbix."
+  },
+  "OA-088": {
+    "categoria": "other",
+    "regla": "R06",
+    "justificacion": "El usuario solicita información ajena al servicio."
+  },
+  "OA-089": {
+    "categoria": "other",
+    "regla": "R06",
+    "justificacion": "La consulta no está relacionada con las funciones de Nubbix."
+  },
+  "OA-095": {
+    "categoria": "other",
+    "regla": "R07",
+    "justificacion": "No hay información suficiente para identificar una intención clasificable."
+  }
+}

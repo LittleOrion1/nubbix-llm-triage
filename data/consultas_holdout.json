@@ -1,0 +1,102 @@
+[
+  {
+    "id": "OA-061",
+    "texto": "Hola, Quiero cambiar mi correo electrónico actual por isabellaalvarez@example.com. Necesito una solución.",
+    "nota": "Generada sintéticamente. Modificación de correo electrónico."
+  },
+  {
+    "id": "OA-042",
+    "texto": "Por favor, Desde ayer la plataforma funciona muy lentamente. Necesito una solución.",
+    "nota": "Generada sintéticamente. Problema de rendimiento."
+  },
+  {
+    "id": "OA-023",
+    "texto": "Necesito ayuda: No recibí la factura correspondiente al mes de marzo.",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-026",
+    "texto": "No recibí la factura correspondiente al mes de octubre. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta sobre facturación."
+  },
+  {
+    "id": "OA-032",
+    "texto": "Hola, No puedo completar una operación porque aparece un mensaje de error. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Error al ejecutar una operación."
+  },
+  {
+    "id": "OA-025",
+    "texto": "Tengo una consulta: Mi tarjeta fue rechazada al intentar realizar el pago. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Problema con un medio de pago."
+  },
+  {
+    "id": "OA-001",
+    "texto": "¿Cómo puedo cambiar la dirección de mi correo electrónico asociado a mi cuenta?",
+    "nota": "Consulta relacionada con credenciales de usuario"
+  },
+  {
+    "id": "OA-054",
+    "texto": "Tengo una consulta: Desde ayer la plataforma funciona muy lentamente. ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Problema de rendimiento."
+  },
+  {
+    "id": "OA-095",
+    "texto": "Hola, Hola, tengo una consulta.",
+    "nota": "Generada sintéticamente. Consulta sin información suficiente."
+  },
+  {
+    "id": "OA-073",
+    "texto": "Quiero cambiar mi correo electrónico actual por lautaro74@example.com.",
+    "nota": "Generada sintéticamente. Modificación de correo electrónico."
+  },
+  {
+    "id": "OA-087",
+    "texto": "¿Me pueden recomendar una película para esta noche? No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-037",
+    "texto": "Hola, La aplicación muestra un error cada vez que intento ingresar. Necesito una solución.",
+    "nota": "Generada sintéticamente. Error de funcionamiento."
+  },
+  {
+    "id": "OA-059",
+    "texto": "¿Cómo puedo cambiar mi contraseña actual?",
+    "nota": "Generada sintéticamente. Modificación de contraseña."
+  },
+  {
+    "id": "OA-019",
+    "texto": "Hola, Quiero solicitar un reembolso por un importe que me cobraron incorrectamente. Gracias.",
+    "nota": "Generada sintéticamente. Solicitud de reembolso."
+  },
+  {
+    "id": "OA-074",
+    "texto": "Necesito actualizar mi nombre de Josefina Maria Emilia Duarte en el perfil.",
+    "nota": "Generada sintéticamente. Actualización de perfil."
+  },
+  {
+    "id": "OA-088",
+    "texto": "Necesito una recomendación de restaurantes en Posadas. Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta fuera del dominio."
+  },
+  {
+    "id": "OA-089",
+    "texto": "¿Qué temperatura va a hacer mañana en Corrientes? ¿Me pueden ayudar?",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-016",
+    "texto": "Hola, Quiero consultar si se registró el pago que realicé el día 09/01/1984. No sé cómo resolverlo.",
+    "nota": "Generada sintéticamente. Consulta sobre registro de pago."
+  },
+  {
+    "id": "OA-085",
+    "texto": "Hola, ¿Me pueden recomendar una película para esta noche? Necesito una solución.",
+    "nota": "Generada sintéticamente. Consulta ajena al servicio."
+  },
+  {
+    "id": "OA-041",
+    "texto": "Por favor, No puedo completar una operación porque aparece un mensaje de error. Necesito una solución.",
+    "nota": "Generada sintéticamente. Error al ejecutar una operación."
+  }
+]

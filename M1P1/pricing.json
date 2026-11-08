@@ -1,0 +1,33 @@
+{
+
+    "currency": "USD",
+    "unit": "per_1M_tokens",
+    "pricing_type": "standard",
+    "last_updated": "2026-11-06",
+    "models": {
+        "openai": {
+            "gpt-6-astra": {
+                "input": 10.00,
+                "output": 50.00,
+                "cached_input": 1.00,
+                "source": "https://developers.openai.com/api/docs/pricing"
+            }
+        },
+        "anthropic": {
+            "claude-haiku-4-5": {
+                "input": 1.00,
+                "output": 5.00,
+                "cached_input": 0.10,
+                "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview"
+            }
+        },
+        "gemini": {
+            "gemini-3.1-flash-lite": {
+                "input": 0.25,
+                "output": 1.50,
+                "source": "https://ai.google.dev/gemini-api/docs/pricing"
+            }
+        }
+    }
+}
+
