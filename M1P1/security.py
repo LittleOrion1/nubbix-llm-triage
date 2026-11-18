@@ -76,7 +76,7 @@ def build_prompt(rules: str, user: str, ctx: list[str]) -> str:
 def build_prompt_con_fuente_externa(
     rules: str,
     user: str,
-    contenido_externo: str
+    contenido_externo: str 
 ) -> str:
     """Construye un prompt que separa la consulta de una fuente externa."""
 

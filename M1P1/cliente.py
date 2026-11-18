@@ -20,6 +20,12 @@
 import time
 from dataclasses import dataclass, asdict
 from .reintentos import with_retry
+from .telemetria import guardar_evento 
+from .costos import calcular_costo
+from datetime import date, datetime, timezone 
+import uuid 
+
+
 # Importamos la configuración, el módulo de simulación
 # y el prompt del sistema.
 from . import config, mock, datos
@@ -392,24 +398,12 @@ def _validar(provider: str) -> str:
 # 8. COSTOS
 # -------------------------
 
-def calcular_costo(model, input_tokens, output_tokens):
-    """
-    Calcula el costo estimado de una consulta.
-
-    IMPORTANTE:
-    Todavía no configuramos tarifas por modelo.
-    Por eso devuelve 0.0 temporalmente.
-
-    Más adelante incorporaremos una tabla de precios
-    actualizada para cada proveedor y modelo.
-    """
-
-    return 0.0
 
 
 # -------------------------
 # 9. FUNCIÓN PRINCIPAL
 # -------------------------
+
 
 def ask(
     provider: str,
@@ -419,7 +413,6 @@ def ask(
     temperature=None,
     max_tokens=None
 ) -> LLMResponse:
-
     """
     Consulta un LLM independientemente del proveedor.
 
@@ -439,7 +432,6 @@ def ask(
 
     # 2. Si no se especifican parámetros,
     # utilizamos los valores del archivo config.py.
-
     temperature = (
         config.TEMPERATURE
         if temperature is None
@@ -452,77 +444,107 @@ def ask(
         else max_tokens
     )
 
-    # 3. Comenzamos a medir el tiempo de ejecución.
+    # 3. Inicializamos las métricas y el estado de ejecución.
     t0 = time.perf_counter()
+    status = "success"
+    error_type = None
+    respuesta = None
+    request_id = uuid.uuid4()
+    etiqueta = str(request_id)
+    
+    # 4. Ejecutamos el proveedor y procesamos la respuesta.
+    try:
 
-    # 4. Elegimos entre simulación y API real.
+        if config.MOCK:
 
-    if config.MOCK:
+            mock.preparar(provider)
 
-        # Prepara el proveedor para la simulación.
-        mock.preparar(provider)
+            raw = mock.completar(
+                provider,
+                system,
+                prompt,
+                temperature,
+                max_tokens
+            )
 
-        # Genera una respuesta ficticia.
-        raw = mock.completar(
-            provider,
-            system,
-            prompt,
-            temperature,
-            max_tokens
+        else:
+
+            raw = _ADAPTADORES[provider](
+                model,
+                system,
+                prompt,
+                temperature,
+                max_tokens
+            )
+
+        # 5. Normalizamos el motivo de finalización.
+        finish_reason = raw.get("finish_reason", "unknown")
+
+        finish_reason = _FINISH.get(
+            finish_reason,
+            finish_reason
         )
 
-    else:
-
-        # Ejecuta el adaptador correspondiente.
-        raw = _ADAPTADORES[provider](
+        # 6. Calculamos el costo estimado.
+        cost = calcular_costo(
             model,
-            system,
-            prompt,
-            temperature,
-            max_tokens
+            raw["input_tokens"],
+            raw["output_tokens"]
         )
 
-    # 5. Calculamos la latencia.
-    latency = time.perf_counter() - t0
+        # 7. Medimos la latencia y construimos LLMResponse.
+        latency = time.perf_counter() - t0
 
-    # 6. Normalizamos el motivo de finalización.
-    finish_reason = raw.get("finish_reason", "unknown")
+        respuesta = LLMResponse(
+            provider=provider,
+            model=model,
+            text=raw["text"],
+            input_tokens=raw["input_tokens"],
+            output_tokens=raw["output_tokens"],
+            thinking_tokens=raw.get("thinking_tokens", 0),
+            finish_reason=finish_reason,
+            cost_usd=cost,
+            latency_s=latency,
+            ttft_s=None,
+            usage_disponible=True,
+            mock=config.MOCK
+        )
 
-    finish_reason = _FINISH.get(
-        finish_reason,
-        finish_reason
-    )
+    except Exception as e:
 
-    # 7. Calculamos el costo estimado.
-    cost = calcular_costo(
-        model,
-        raw["input_tokens"],
-        raw["output_tokens"]
-    )
+        status = "error"
+        error_type = type(e).__name__
 
-    # 8. Construimos una respuesta unificada.
-    return LLMResponse(
+        # Conservamos la excepción original.
+        raise
 
-        provider=provider,
-        model=model,
+    finally:
 
-        text=raw["text"],
+        # 8. Calculamos la duración incluso si hubo un error.
+        latency = time.perf_counter() - t0
 
-        input_tokens=raw["input_tokens"],
-        output_tokens=raw["output_tokens"],
+        # 9. Construimos el evento de telemetría.
+        registro = {
+            "status": status,
+            "error_type": error_type,
+            "latency": latency,
+            "provider": provider,
+            "model": model,
+            "input_tokens": respuesta.input_tokens if respuesta else None,
+            "output_tokens": respuesta.output_tokens if respuesta else None,
+            "cost_usd": respuesta.cost_usd if respuesta else None,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "request_id":etiqueta 
+        }
 
-        thinking_tokens=raw.get("thinking_tokens", 0),
+        # 10. Persistimos el evento en eventos.jsonl.
+        try:
+            guardar_evento(registro)
 
-        finish_reason=finish_reason,
+        except OSError:
+            # Un error de escritura no debe ocultar
+            # una excepción original del proveedor.
+            pass
 
-        cost_usd=cost,
-        latency_s=latency,
-
-        ttft_s=None,
-
-        usage_disponible=True,
-
-        mock=config.MOCK
-    )
-
-
+    # 11. Devolvemos la respuesta unificada.
+    return respuesta
