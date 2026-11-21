@@ -23,6 +23,7 @@ from .reintentos import with_retry
 from .telemetria import guardar_evento 
 from .costos import calcular_costo
 from datetime import date, datetime, timezone 
+from .security import anonimizar_pii 
 import uuid 
 
 
@@ -411,7 +412,8 @@ def ask(
     *,
     system=datos.SYSTEM_PROMPT,
     temperature=None,
-    max_tokens=None
+    max_tokens=None,
+    batch_id = None
 ) -> LLMResponse:
     """
     Consulta un LLM independientemente del proveedor.
@@ -454,6 +456,7 @@ def ask(
     
     # 4. Ejecutamos el proveedor y procesamos la respuesta.
     try:
+        prompt_seguro = anonimizar_pii(prompt)
 
         if config.MOCK:
 
@@ -462,7 +465,7 @@ def ask(
             raw = mock.completar(
                 provider,
                 system,
-                prompt,
+                prompt_seguro ,
                 temperature,
                 max_tokens
             )
@@ -472,7 +475,7 @@ def ask(
             raw = _ADAPTADORES[provider](
                 model,
                 system,
-                prompt,
+                prompt_seguro,
                 temperature,
                 max_tokens
             )
@@ -534,7 +537,8 @@ def ask(
             "output_tokens": respuesta.output_tokens if respuesta else None,
             "cost_usd": respuesta.cost_usd if respuesta else None,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "request_id":etiqueta 
+            "request_id":etiqueta, 
+            "batch_id":batch_id
         }
 
         # 10. Persistimos el evento en eventos.jsonl.

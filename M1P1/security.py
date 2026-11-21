@@ -1,10 +1,14 @@
 
 import re
-
+import spacy 
 
 # --------------------------------------------------
 # DETECCIÓN DE PROMPT INJECTION
 # --------------------------------------------------
+
+
+nlp = spacy.load("es_core_news_sm")
+
 
 PATRONES_INYECCION = [
     r"ignora\s+(todas\s+)?(las\s+)?instrucciones",
@@ -46,7 +50,33 @@ def validar_entrada(text: str) -> None:
             "Consulta rechazada: posible intento de prompt injection."
         )
 
+def anonimizar_pii(texto:str) -> str : 
 
+    dni_patron = r'\b(?:\d{1,2}\.\d{3}\.\d{3}|\d{7,8})\b'
+    
+    mail_patron = r'[\w\.-]+@[\w\.-]+\.\w+'
+    
+    texto_anonimizado= re.sub(mail_patron,"[EMAIL]",texto)
+    
+    dni_anonimizado = re.sub(dni_patron, "[DNI]", texto_anonimizado)
+    
+    doc = nlp(dni_anonimizado)
+    nombres = [
+    ent for ent in doc.ents
+    if ent.label_ == "PER"
+    and not (len(ent) == 1 and ent[0].pos_ == "VERB")
+    ]
+
+    # 6. Enmascaramos los nombres detectados.
+    resultado = dni_anonimizado
+
+    for ent in reversed(nombres):
+        resultado = (
+            resultado[:ent.start_char]
+            + "[NOMBRE]"
+            + resultado[ent.end_char:]
+        )
+    return resultado
 # --------------------------------------------------
 # CONSTRUCCIÓN DEL PROMPT
 # --------------------------------------------------

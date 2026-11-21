@@ -5,3 +5,4 @@ openai>=1.50
 python-dotenv>=1.0
 tiktoken>=0.8
 pytest>=8
+spacy

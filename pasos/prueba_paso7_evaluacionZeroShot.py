@@ -2,6 +2,7 @@
 import sys
 import json
 from pathlib import Path
+import uuid 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
@@ -88,6 +89,9 @@ def main():
 
     print(f"Consultas ya procesadas correctamente: {completadas}")
 
+    codigo = uuid.uuid4()
+    identificador = str(codigo)
+    
     for consulta in consultas:
 
         id_consulta = consulta["id"]
@@ -108,7 +112,8 @@ def main():
             response = ask(
                 provider="openai",
                 prompt=consulta["texto"],
-                system=system
+                system=system,
+                batch_id=identificador
             )
 
         except Exception as error:

@@ -24,13 +24,23 @@ El proyecto está organizado en cuatro componentes principales:
 
 ### Flujo general
 
-1. Recepción de una consulta.
-2. Validación heurística de seguridad de la entrada.
-3. Construcción del prompt y selección del proveedor.
-4. Procesamiento mediante el modelo LLM.
-5. Control heurístico de la salida.
-6. Validación de la respuesta estructurada con Pydantic.
-7. Registro de la clasificación y sus métricas.
+```mermaid
+flowchart TD
+    consulta([Consulta de soporte]) --> entrada{"¿La entrada pasa el control de seguridad?"}
+    entrada -->|No| entrada_bloqueada["Entrada bloqueada"]
+    entrada -->|Sí| preparar["Preparar el prompt con las instrucciones del sistema"]
+    preparar --> proveedor["Anonimizar datos personales y consultar el proveedor LLM o su simulador"]
+    proveedor -.-> telemetria["Telemetría del cliente LLM"]
+    proveedor -->|Error| error_proveedor["Error del proveedor"]
+    proveedor -->|Respuesta| salida{"¿La salida pasa el control de seguridad?"}
+    salida -->|No| salida_bloqueada["Salida bloqueada"]
+    salida -->|Sí| esquema{"¿El JSON cumple el esquema Pydantic?"}
+    esquema -->|Sí| resultado(["Categoría y confianza, más la respuesta del proveedor"])
+    esquema -->|No| intentos{"¿Quedan intentos?"}
+    intentos -->|Sí| correccion["Agregar el error de validación al prompt"]
+    correccion --> proveedor
+    intentos -->|No| error_validacion["Intentos de validación agotados"]
+```
 
 ## 3. Estructura del proyecto
 
